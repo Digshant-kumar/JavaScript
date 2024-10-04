@@ -8,18 +8,28 @@
 
 //? Number: Represents numeric values, including integers and floating-point numbers.
 // Example:
+// var myFavNumber = 8;
+// console.log(myFavNumber);
 
 //? String: Represents a sequence of characters enclosed in single or double quotes.
 // Example:
+// var myName = "Digshant";
+// console.log(myName);
 
 //? Boolean: Represents a logical entity with two values: true or false.
 // Example:
+// var isRaining = false;
+// console.log(isRaining);
 
 //? undefined: Represents the absence of a value or an uninitialized variable.
 // Example:
+// var digshant;
+// console.log(digshant);
 
 //? Null: Represents the absence of a value. It is often used to explicitly indicate that a variable or object property has no assigned value.
 // Example:
+// var badTime = null;
+// console.log(badTime);
 
 //? BigInt: Represents integers of arbitrary precision (available since ECMAScript 2020).
 // Example:
@@ -37,17 +47,31 @@
 
 //? 2: What is the purpose of typeof operator in JavaScript❓
 
+// var myName = "Digshant";
+// console.log(typeof myName);
+
 //? 3: What is the result of `typeof null` in JavaScript❓
+// The result is object
+// var badMemories = null;
+// console.log(typeof badMemories);
 
 //? 4: What are primitive data types in JavaScript❓
 
 //? 5: Convert a string to a number?
 // We just need to add the '+' sign before the string
 // Example:
+// var myFavNumber = "10";
+// console.log(typeof +myFavNumber);
+// console.log(typeof Number(myFavNumber));
+// console.log(+myFavNumber);
+// console.log(Number(myFavNumber));
 
 //? 6: Convert a number to a string?
 // We just need to add an empty string after the number
 // Example:
+// let str = 5;
+// console.log(typeof String(str));
+// console.log(typeof (str + ""));
 
 //? 7: Explain the concept of truthy and falsy values in JavaScript. Provide examples.❓
 
@@ -80,21 +104,21 @@
 //? Both functions will attempt to convert as much of the string as possible until an invalid character is encountered.
 
 //! Here are more examples
-console.log(parseInt("123"));
-// 123 (default base-10)
-console.log(parseInt("123", 10));
-// 123 (explicitly specify base-10)
-console.log(parseInt("   123 "));
-// 123 (whitespace is ignored)
-console.log(parseInt("077"));
-// 77 (leading zeros are ignored)
-console.log(parseInt("1.9"));
-// 1 (decimal part is truncated)
+// console.log(parseInt("123"));
+// // 123 (default base-10)
+// console.log(parseInt("123", 10));
+// // 123 (explicitly specify base-10)
+// console.log(parseInt("   123 "));
+// // 123 (whitespace is ignored)
+// console.log(parseInt("077"));
+// // 77 (leading zeros are ignored)
+// console.log(parseInt("1.9"));
+// // 1 (decimal part is truncated)
 
 //! When we will not get an Output
-console.log(parseInt("&123"));
-console.log(parseInt("-123"));
-console.log(parseInt("xyz"));
+// console.log(parseInt("&123"));
+// console.log(parseInt("-123"));
+// console.log(parseInt("xyz"));
 // NaN (input can't be converted to an integer)
 
 //? What is the purpose of the NaN value in JavaScript❓
