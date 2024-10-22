@@ -22,28 +22,81 @@
 //* ===============================
 
 //! Requirements:
-// If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.
-// If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.
-// If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
-// If the person is 18 or older, a citizen, but not registered to vote, display a message saying they are not eligible due to registration status.
-// Extended voting eligibility checker with additional conditions
+//? If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.
+//? If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.
+//? If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
+//? If the person is 18 or older, a citizen, but not registered to vote, display a message saying they are not eligible due to registration status.
+//? Extended voting eligibility checker with additional conditions
 
-// Assume the user's age, citizenship status, and registration status as inputs
-// let userAge = 22;
-// let isCitizen = true; // Assume true for citizen, false for non-citizen
-// let isRegistered = false; // Assume false for not registered, true for registered
+//? Assume the user's age, citizenship status, and registration status as inputs
+//? let userAge = 22;
+//? let isCitizen = true; // Assume true for citizen, false for non-citizen
+//? let isRegistered = false; // Assume false for not registered, true for registered
 //! Check eligibility using if...else statements with multiple conditions
+
+// var p_age = 22;
+// var is_citizen = true;
+// var registered = false;
+
+// if (p_age >= 18) {
+//   if (is_citizen) {
+//     if (registered) {
+//       console.log("Eligible To Vote");
+//     } else {
+//       console.log("Not Eligible To Vote due to Registration Status");
+//     }
+//   } else {
+//     console.log("Not Eligible To Vote due to Citizenship Status");
+//   }
+// } else console.log("Not Eligible To Vote");
 
 //* ===============================
 //* Interview Questions
 //* ===============================
 //! 1: Write a program to check if a number is even or odd.
+
+// var num = 0;
+
+// if (num % 2 == 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+
 //! 2: Write a program to check if a number is prime.
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
+
+// var num = 4;
+// if (num <= 1) {
+//   console.log("Not Prime");
+//   return;
+// }
+// var flag = true;
+// for (var i = 2; i <= num / 2; i = i + 1) {
+//   if (num % i == 0) {
+//     flag = false;
+//     break;
+//   }
+// }
+// if (flag) {
+//   console.log("Prime");
+// } else {
+//   console.log("Not Prime");
+// }
+
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
 
 //! 3: Write a program to check if a number is positive, negative, or zero.
+
+// var num = 4;
+// if (num > 0) {
+//   console.log("Positive");
+// } else if (num < 0) {
+//   console.log("Negative");
+// } else {
+//   console.log("Zero");
+// }
 
 //* ===============================
 //* Switch Statement
@@ -74,6 +127,33 @@
 //? ==========================
 
 //! Write a JavaScript switch statement that takes a variable areaOfShapes representing different shapes, and based on its value, calculates and logs the area of the corresponding shape. Consider three shapes: 'Rectangle,' 'Circle,' and 'Square.' For 'Rectangle,' use variables a and b as the sides; for 'Circle,' use a variable r as the radius; and for 'Square,' use variable a as the side length. If the provided shape is not recognized, log a message saying, 'Sorry the shape is not available.' Test your switch statement with areaOfShapes set to 'Square' and sides a and b set to 5 and 10, respectively. Ensure that the correct area (25 in this case) is logged to the console.
+
+// var areaOfShapes = "circle";
+// var a = 5;
+// var b = 10;
+
+// var result;
+
+// switch (areaOfShapes) {
+//   case "circle":
+//     var r = 2;
+//     result = 3.14 * (r * r);
+//     console.log("area of circle : " + result);
+//     break;
+
+//   case "square":
+//     result = a * a;
+//     console.log("area of square : " + result);
+//     break;
+
+//   case "rectangle":
+//     result = a * b;
+//     console.log("area of rectangle : " + result);
+//     break;
+
+//   default:
+//     console.log("Shape not found");
+// }
 
 //* ===============================
 //* While Loop

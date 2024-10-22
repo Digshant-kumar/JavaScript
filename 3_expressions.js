@@ -70,6 +70,7 @@
 //* ====================================
 
 //! let result = 0.1 + 0.2 ❓ 🤔💭
+//? console.log(result.toFixed(2));
 
 //* ===================================
 //* 3: String Operators
@@ -175,6 +176,10 @@
 // ! write a program to check if the candidates isEligibleToDrive or not? Age must be equal to or greater then 18.
 
 //! Q: Let's say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
+
+// var score = 95;
+// var result = score >= 60 ? "Pass" : "Fail";
+// console.log(result);
 
 //* ===================================
 //*  Combined Interview Questions
