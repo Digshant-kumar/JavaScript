@@ -167,8 +167,25 @@
 
 //* Simple while loop to count from 1 to 10 🧑‍💻
 
+// var i = 1;
+
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
 //! practice 🧑‍💻
 //? let's create a table of 5
+
+// var n = 1;
+// var res;
+// while (n <= 10) {
+//   res = n * 5;
+//   //   console.log("5 * " + n + " = " + res);
+//   console.log(`5 * ${n} = ${res}`);
+
+//   n++;
+// }
 
 //* ===============================
 //* Do-While Loop
@@ -182,11 +199,26 @@
 
 //* Simple do...while loop to count from 1 to 10 🧑‍💻
 
+// var num = 1;
+// do {
+//   console.log(num);
+//   num++;
+// } while (num <= 10);
+
 //? Common Use Cases:
 // When you want to guarantee the execution of the loop body at least once.
 // When the number of iterations is not known beforehand, and you want to validate the condition after the first iteration.
 
 //? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
+
+// var userInput;
+// var positiveNumber;
+// do {
+//   userInput = prompt("Enter a positive number");
+//   positiveNumber = parseFloat(userInput);
+// } while (isNaN(positiveNumber) || positiveNumber < 0);
+
+// console.log(`You Entered ${positiveNumber} which is a positive number`);
 
 //* ===============================
 //* For Loop
@@ -202,6 +234,10 @@
 // Iteration: Executed after each iteration. Typically used to update the loop control variable.
 
 //* Simple for loop to count from 1 to 10
+
+// for (var num = 1; num <= 10; num++) {
+//   console.log(num);
+// }
 
 //? Key Point:
 // The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.
@@ -222,10 +258,50 @@
 //! practice :
 //! Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻
 
+// var res = 0;
+// for (var i = 1; i <= 10; i++) {
+//   res = res + i;
+// }
+// console.log(res);
+
 //! Generating a Times Table:🧑‍💻
 //! Example 3: Generating a times table of 5 with a for loop.
 
 //! Homework ➡️ JavaScript program to print table for given number (8,9,12,15) using for Loop?
 
+// var num = [8, 9, 12, 15];
+// var index = 0;
+// var res;
+// // console.log(num[index]);
+
+// for (var i = 1; i <= 10; i++) {
+//   if (i <= 10) {
+//     res = num[index] * i;
+//     console.log(`${num[index]} * ${i} = ${res}`);
+//   }
+//   if (i == 10 && index < 3) {
+//     index++;
+//     i = 0;
+//   }
+// }
+
 //? More Practice
 //!1: program To check if a year is a leap year🧑‍💻
+
+// var year = 2300;
+
+// if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+//   console.log(`Year ${year} is a leap year`);
+// } else {
+//   console.log(`Year ${year} is not a leap year`);
+// }
+
+// ! Drawing Patterns with Asterisks :
+
+// for (var i = 1; i <= 5; i++) {
+//   var pattern = "";
+//   for (var j = 1; j <= i; j++) {
+//     pattern = pattern + "* ";
+//   }
+//   console.log(pattern);
+// }
