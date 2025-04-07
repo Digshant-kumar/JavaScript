@@ -7,6 +7,18 @@
 
 // 1st student
 
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// var a = 10,
+//   b = 5;
+// console.log(sum(a, b));
+
+// var a = 4,
+//   b = 8;
+// console.log(sum(a, b));
+
 //* ===============================
 //* Function Declaration:
 //* ==============================
@@ -68,10 +80,22 @@
 //* ==============================
 //? A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
 
+// var res = function sum(a, b) {
+//   console.log(a + b);
+// };
+
+// res(50, 10);
+
 //* ==============================
 //*  Anonymous Function
 //* =============================
 //? An anonymous function is a function without a name. It can be created using either a function expression or a function declaration without a specified name.
+
+// var res = function (a, b) {
+//   console.log(a + b);
+// };
+
+// res(50, 10);
 
 //* ==============================
 //*  Return Keyword
@@ -93,6 +117,13 @@
 //   // code to be executed
 // })();
 
+// var res = (function (a, b) {
+//   console.log(a + b);
+//   return a + b;
+// })(2, 4);
+
+// console.log(`The sum is ${res}`);
+
 // !Practice Time ( IIFE with Parameters)
 
 //? Interview Questions
@@ -105,3 +136,26 @@
 
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
+// let a = 10;
+// console.log(a);
+// {
+//   let a = 20;
+//   console.log(a);
+// }
+// // a = 30;
+// console.log(a);
+
+// function sum(a, b = 5) {
+//   return a + b;
+// }
+
+// console.log(sum(5));
+
+// const sum = (a, b) => {
+//   return a + b;
+// };
+
+// console.log(sum(15, 10));
+
+// str = "Digshant";
+// console.log(str.slice(1, 4));
